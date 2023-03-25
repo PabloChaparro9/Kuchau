@@ -18,10 +18,6 @@ header{
     font-size: 100px;
     z-index: 2;
 }
-.cabezal{
-    background-color: #000000c8;
-    height: 250px;
-}
 header::before{
     content: "";
     position: absolute;
