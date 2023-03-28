@@ -97,6 +97,11 @@ input{
     text-decoration-style: solid;
     margin: 0 40px;
 }
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .titulo-contenido{
     text-transform: none;
     font-size: 75px;
@@ -112,24 +117,36 @@ input{
 }
 .destacados h2{
     font-size: 75px;
-    margin: 40px 0;
+    margin-top: 50px;
 }
 .contenidoDestacados{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 80%;
+    padding: 50px 0;
 }
-.cardDestacados{
-    width: 130px;
+.card{
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 180px;
+    border-radius: 15px;
 }
-img{
-    width: 400px;
+.card img{
+    width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom right, var(--color-bg-black), var(--color-bg-rojo));
 }
 a{
     font-size: 26px;
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: ease-in 1s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.800);
+}
+.card:hover img{
+    opacity: 1;
+    transition: ease-in 1s;
 }
