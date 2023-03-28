@@ -3,7 +3,8 @@
 :root{
     --color-de-fuente: rgb(245, 237, 237);
     --color-bg-black: black;
-    --color-bg-gris: rgb(62, 54, 54);
+    --color-bg-grey-primary: rgb(82, 72, 72);
+    --color-bg-grey-secondary: rgb(114, 101, 101);
     --color-bg-rojo: rgb(215, 35, 35);
 }
 *{
@@ -38,14 +39,10 @@ header::before{
     clip-path: polygon(14% 22%, 0% 0%, 36% 10%, 28% 2%, 66% 8%, 61% 3%, 100% 13%, 74% 14%, 81% 21%, 49% 17%, 54% 26%);
     z-index: -1;
 }
-header i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    font-size: 80px;
-    color: var(--color-bg-gris);
+header svg{
+    width: 130px;
+    height: 130px;
+    color: var(--color-bg-grey-primary);
     background-color: red;
     border-radius: 50%;
 }
@@ -88,7 +85,7 @@ input{
     width: 100%;
     height: 100%;
     background-color: var(--color-de-fuente);
-    color: var(--color-bg-gris);
+    color: var(--color-bg-grey-primary);
     border-radius: 40px;
 }
 .buscar i{
@@ -112,14 +109,14 @@ input{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--color-bg-gris);
+    background-color: var(--color-bg-grey-primary);
     width: 100%;
 }
-.destacados h2{
+.destacados h2, .sucursales h2{
     font-size: 75px;
     margin-top: 50px;
 }
-.contenidoDestacados{
+.contenidoDestacado{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -132,6 +129,7 @@ input{
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
+    background-color: var(--color-bg-grey-secondary);
 }
 .card img{
     width: 100%;

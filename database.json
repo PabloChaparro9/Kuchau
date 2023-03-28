@@ -1,0 +1,17 @@
+[
+    {
+        "name": "nombre",
+        "year": 2023,
+        "url": "./img/auto1.jpeg"
+    },
+    {
+        "name": "nombre",
+        "year": 2023,
+        "url": "./img/auto2.png"
+    },
+    {
+        "name": "nombre",
+        "year": 2023,
+        "url": "./img/auto3.jpeg"
+    }
+]
