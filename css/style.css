@@ -64,6 +64,11 @@ main{
     height: 60px;
     border-radius: 40px;
 }
+.buscar form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 .buscador:focus{
     outline: none;
     color: black;
