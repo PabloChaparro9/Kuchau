@@ -12,8 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Abril Fatface', sans-serif;
-    font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 body{
@@ -76,14 +74,19 @@ input{
     text-decoration-style: solid;
     margin: 0 40px;
 }
-a{
-    font-size: 26px;
-}
 footer{
     background-color: var(--color-bg-grey-dark);
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+}
+footer .contenidoFooter h2{
+    font-size: 60px;
+}
+footer .contenidoFooter .desarrolladores h2 {
+    font-size: 40px;
+}
+footer .contenidoFooter .enlacesFooter h2{
+font-size: 40px;
 }
 .contenidoFooter{
     display: flex;
@@ -92,35 +95,32 @@ footer{
     margin-top: 25px;
     margin-bottom: 75px;
 }
-footer .contenidoFooter p{
-    font-size: 50px;
-}
 .desarrolladores ,.enlacesFooter{
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+a{
+    font-size: 30px;
+}
+.enlacesFooter a{
+    padding-left: 15px;
 }
 ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 15px;
 }
 @media screen and (max-width: 800px){
-    
+    footer h2{
+        font-size: 70px;
+    }
     .contenidoFooter{
         display: flex;
         flex-direction: column;
         gap: 30px;
-    }
-    .enlacesFooter{
-        padding-left: 30px;
-    }
-    .enlacesFooter a{
-        font-size: 30px;
-    }
-    .desarrolladores h2{
-        font-size: 25px;
     }
     .desarrolladores ul{
         padding-left: 30px;
