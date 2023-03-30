@@ -21,6 +21,7 @@ body{
 }
 h1,h2,p,a,li,i,label{
     color: var(--color-de-fuente);
+    text-decoration: none;
 }
 header{
     display: flex;
@@ -28,27 +29,6 @@ header{
     align-items: center;
     margin-bottom: 10vh;
     padding: 15px 5%;
-}
-header svg{
-    width: 130px;
-    height: 130px;
-    color: var(--color-bg-grey-primary);
-    background-color: var(--color-bg-rojo);
-    border-radius: 50%;
-}
-nav{
-    display: flex;
-    gap: 50px;
-}
-a{
-    text-decoration: none;
-}
-.contacto{
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-bg-rojo);
-    border-radius: 5px;
-    width: 115px;
 }
 main{
     display: flex;
@@ -112,7 +92,7 @@ footer{
     margin-bottom: 75px;
 }
 footer .contenidoFooter p{
-    font-size: 25px;
+    font-size: 50px;
 }
 .desarrolladores ,.enlacesFooter{
     display: flex;
@@ -124,4 +104,31 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+@media screen and (max-width: 800px){
+    
+    .contenidoFooter{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .enlacesFooter{
+        padding-left: 30px;
+    }
+    .enlacesFooter a{
+        font-size: 30px;
+    }
+    .desarrolladores h2{
+        font-size: 25px;
+    }
+    .desarrolladores ul{
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    .contenidoFooter h2{
+        font-size: 50px;
+    }
+    .buscar{
+        display: none;
+    }
 }
