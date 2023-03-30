@@ -5,6 +5,7 @@
     --color-bg-black: black;
     --color-bg-grey-primary: rgb(82, 72, 72);
     --color-bg-grey-secondary: rgb(114, 101, 101);
+    --color-bg-grey-dark: rgb(24, 23, 23);
     --color-bg-rojo: rgb(215, 35, 35);
 }
 *{
@@ -18,32 +19,21 @@
 body{
     background-color: var(--color-bg-black);
 }
-h1,h2,p,a,li,i{
+h1,h2,p,a,li,i,label{
     color: var(--color-de-fuente);
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10vh;
     padding: 15px 5%;
-}
-header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom left, var(--color-bg-black), var(--color-bg-rojo));
-    background-size: cover;
-    clip-path: polygon(14% 22%, 0% 0%, 36% 10%, 28% 2%, 66% 8%, 61% 3%, 100% 13%, 74% 14%, 81% 21%, 49% 17%, 54% 26%);
-    z-index: -1;
 }
 header svg{
     width: 130px;
     height: 130px;
     color: var(--color-bg-grey-primary);
-    background-color: red;
+    background-color: var(--color-bg-rojo);
     border-radius: 50%;
 }
 nav{
@@ -60,14 +50,10 @@ a{
     border-radius: 5px;
     width: 115px;
 }
-.contenido{
+main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-h1{
-    font-size: 95px;
-    margin: 70px 0;
+    justify-content: center;
+    min-height: 70vh;
 }
 .buscar{
     background-color: var(--color-de-fuente);
@@ -77,6 +63,16 @@ h1{
     width: 90%;
     height: 60px;
     border-radius: 40px;
+}
+.buscador:focus{
+    outline: none;
+    color: black;
+}
+.buscar:focus-within{
+    box-sizing: content-box;
+    border: 2px black solid;
+    outline: 1px white solid;
+    height: 56px;
 }
 input{
     padding-left: 40px;
@@ -94,57 +90,33 @@ input{
     text-decoration-style: solid;
     margin: 0 40px;
 }
-.sucursales{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.titulo-contenido{
-    text-transform: none;
-    font-size: 75px;
-    margin: 100px 0;
-    color: var(--color-bg-rojo);
-}
-.destacados{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--color-bg-grey-primary);
-    width: 100%;
-}
-.destacados h2, .sucursales h2{
-    font-size: 75px;
-    margin-top: 50px;
-}
-.contenidoDestacado{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 50px 0;
-}
-.card{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    background-color: var(--color-bg-grey-secondary);
-}
-.card img{
-    width: 100%;
-    border-radius: 15px;
-    background: linear-gradient(to bottom right, var(--color-bg-black), var(--color-bg-rojo));
-}
 a{
     font-size: 26px;
 }
-.card:hover{
-    transform: scale(1.03);
-    transition: ease-in 1s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.800);
+footer{
+    background-color: var(--color-bg-grey-dark);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
-.card:hover img{
-    opacity: 1;
-    transition: ease-in 1s;
+.contenidoFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+footer .contenidoFooter p{
+    font-size: 25px;
+}
+.desarrolladores ,.enlacesFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
