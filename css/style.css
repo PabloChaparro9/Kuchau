@@ -20,7 +20,6 @@ body{
 h1,h2,p,a,li,i,label{
     color: var(--color-de-fuente);
     text-decoration: none;
-    font-weight: normal;
 }
 header{
     display: flex;
@@ -81,12 +80,15 @@ footer{
 }
 footer .contenidoFooter h2{
     font-size: 60px;
+    font-weight: bold;
 }
 footer .contenidoFooter .desarrolladores h2 {
     font-size: 40px;
+    font-weight: normal;
 }
 footer .contenidoFooter .enlacesFooter h2{
-font-size: 40px;
+    font-size: 40px;
+    font-weight: normal;
 }
 .contenidoFooter{
     display: flex;
@@ -121,13 +123,6 @@ ul{
         display: flex;
         flex-direction: column;
         gap: 30px;
-    }
-    .desarrolladores ul{
-        padding-left: 30px;
-        font-size: 20px;
-    }
-    .contenidoFooter h2{
-        font-size: 50px;
     }
     .buscar{
         display: none;
