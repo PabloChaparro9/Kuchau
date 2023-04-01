@@ -30,7 +30,9 @@ header{
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: 70vh;
 }
 .buscar{
@@ -77,6 +79,7 @@ footer{
     background-color: var(--color-bg-grey-dark);
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 footer .contenidoFooter h2{
     font-size: 60px;
