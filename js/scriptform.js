@@ -8,7 +8,6 @@ try {
 } catch (e) {
     console.error(e)
 }
-
 try {
     const formularioRegistro = document.getElementById("formularioRegistro")
     const formularioMarca = document.getElementById("marca")

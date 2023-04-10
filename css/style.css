@@ -108,6 +108,20 @@ footer .contenidoFooter .enlacesFooter h2{
 a{
     font-size: 30px;
 }
+.bi-chevron-double-up {
+    background-color: grey;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
 ul{
     list-style: none;
     display: flex;
