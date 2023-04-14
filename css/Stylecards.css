@@ -46,7 +46,7 @@ body{
     color: black;
 }
 .carta:hover{
-    transform: translateY(-5%);
+    transform: scale(1.02);
     box-shadow: 5 5px 20px rgba(0, 0, 0, 0.4);
 }
 .carta img{

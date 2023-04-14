@@ -12,11 +12,9 @@ try {
     const formularioRegistro = document.getElementById("formularioRegistro")
     const formularioMarca = document.getElementById("marca")
     const formularioColores = document.getElementById("colores")
-
     formularioRegistro.addEventListener("submit", (event) => {
         event.preventDefault()
     })
-    
     const fadeOutEffectSelect = (...elements) => {
         for(let i = 0; i < formularioColores.length; i++){
             if(formularioColores[i] != undefined && formularioColores[i] != ""){
@@ -39,7 +37,7 @@ try {
             }
         }
     }
-    formularioMarca.addEventListener("change", (event) =>{
+    formularioMarca.addEventListener("change", () =>{
         const elementSelected = formularioMarca.options[formularioMarca.selectedIndex].value;
         switch(elementSelected) {
             case "seleccione un modelo":
